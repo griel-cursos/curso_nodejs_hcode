@@ -1,0 +1,19 @@
+{
+  "name": "curso_nodejs_hcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/griel-cursos/curso_nodejs_hcode.git"
+  },
+  "author": "Roberto Griel Filho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/griel-cursos/curso_nodejs_hcode/issues"
+  },
+  "homepage": "https://github.com/griel-cursos/curso_nodejs_hcode#readme"
+}
