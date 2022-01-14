@@ -9,7 +9,13 @@
   "repository": "https://github.com/griel-cursos/curso_nodejs_hcode.git",
   "author": "Roberto Griel Filho",
   "license": "MIT",
-  "keywords": ["nodejs","npm","express","url","mongodb"],
+  "keywords": [
+    "nodejs",
+    "npm",
+    "express",
+    "url",
+    "mongodb"
+  ],
   "scripts": {
     "start": "node server.js"
   }
