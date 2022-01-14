@@ -2,12 +2,18 @@ const http = require('http');
 const host = '127.0.0.1';
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type','text/plain');
-    res.end('Olá Mundo! \n Meu primeiro Script');
+//Request: Solicitação ao servidor
+//Response: Resposta do servidor
+
+const server = http.createServer((req, res)=>{
+
+    res.statusCode = 200; //Deu tudo certo
+    res.setHeader('Content-Type','text/plain'); //Devolve um header de texto puro
+    res.end('Olá Mundo! \n Primeiro Script em Nodejs');
+
 });
 
+//Servidor ouvindo a porta, o host, e qual função irá retornar
 server.listen(port, host, ()=>{
-    console.log(`Servidor Rodando em http://${host}:${port}`);
+    console.log(`Deu tudo certo! Servidor rodando na porta ${port} pelo servidor http://${host}`);
 });
