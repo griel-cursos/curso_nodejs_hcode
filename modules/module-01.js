@@ -1,15 +1,19 @@
 console.log('Executando module-01')
 
-module.exports.oculta = ()=>{
+const oculta = ()=>{
     console.log('Executando função oculta');
 }
 
 //Exportando uma função como módulo
-module.exports.executa = ()=>{
+executa = ()=>{
     console.log('Executando função executa');
 }
 
-module.exports.welcome = 'Bem vindo'
+welcome = 'Bem vindo'
+
+module.exports = {
+    executa, welcome
+}
 
 //REPL - Executa node no terminal
 /**
