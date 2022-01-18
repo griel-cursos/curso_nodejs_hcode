@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 //Lendo arquivos de uma pasta e exibindo no console
-fs.readdir('../', (err, data)=>{
+fs.readdir(__dirname, (err, data)=>{
     if (err) throw err;
 
     data.forEach((item)=>{
-        //console.log(__dirname + '\\' + item);
+        console.log(__dirname + '\\' + item);
     })
 });
 
@@ -19,4 +19,4 @@ fs.readFile('texto.txt', (err, data)=>{
 
 //Mesma coisa que o exemplo de icma, mas de forma bloqueante (ou seja, enquanto não carregar, não continua o resto do código)
 const texto = fs.readFileSync('texto.txt');
-console.log(`Texto: ${texto}`);
+//console.log(`Texto: ${texto}`);
