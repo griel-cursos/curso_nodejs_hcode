@@ -1,7 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res)=>{
+const logReq = (req, res, next)=>{
+
+    console.log('Executando função Middleware para rota de admin')
+
+    return next();
+
+}
+
+
+router.get('/', logReq, (req, res)=>{
 
     res.send('Entrou na administração');
 

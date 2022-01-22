@@ -15,6 +15,18 @@ const adminRoutes = require('./routes/admin');
 //Aceitando JSON no Express
 app.use(express.json());
 
+
+//Criando um middleware
+//Recebe uma requisição, dá uma resposta e retorna o que fará em seguida
+app.use((req, res, next)=>{
+
+    console.log('Executando Middleware em nível aplicação');
+
+    return next();
+
+});
+
+
 app.get('/', (req, res)=>{
 
     res.send('Hello World');
