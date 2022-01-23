@@ -1,0 +1,3 @@
+### Acessando via get usando extensão Rest Client (https://open.vscode.dev/Huachao/vscode-restclient)
+GET http://localhost:3000/subscribers
+###
